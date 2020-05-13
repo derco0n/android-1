@@ -14,6 +14,14 @@
             fetch="https://github.com"
             review="http://review.ubports.com"
             revision="refs/heads/halium-7.1" />
+    
+    <remote name="halbhmoddev"
+            fetch="https://github.com/derco0n"            
+            revision="halium-7.1" />
+    
+    <remote name="halbhmodkern"
+            fetch="https://github.com/derco0n"            
+            revision="android-msm-bullhead-3.10-marshmallow-dr1.6-ut" />
 
     <remote name="them"
             fetch="https://github.com/TheMuppets"
@@ -260,7 +268,8 @@
     <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom" remote="los" />
 
     <project path="halium/audioflingerglue" name="Halium/audioflingerglue" remote="hal" />
-    <project path="halium/devices" name="Halium/halium-devices" remote="hal" />
+    <!-- <project path="halium/devices" name="Halium/halium-devices" remote="hal" /> -->
+    <project path="halium/devices" name="halium-devices" remote="halbhmoddev" />
     <project path="halium/droidmedia" name="droidmedia" remote="sailfishos" revision="refs/tags/0.20191025.0" />
     <project path="halium/halium-boot" name="Halium/halium-boot" remote="hal" revision="master" />
     <project path="halium/hybris-boot" name="Halium/hybris-boot" remote="hal" revision="refs/heads/master" />
